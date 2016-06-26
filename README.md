@@ -19,5 +19,9 @@ Just copy `install-hooks.sh` and `hooks` directory to your git repository, then 
   And we need delete every empty directory when encountered.
   So that we could remove nested empty directories.
 
+## Test
+You could run `hooks/testcase.sh` to build test directory structure.
+And then you could run `hooks/post-checkout.sh` or `hooks/post-merge` to remove empty directories.
+
 ## Reference
 * [3pjgames/unity-git-hooks: Git hooks for Unity3D project](https://github.com/3pjgames/unity-git-hooks)
