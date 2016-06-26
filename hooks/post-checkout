@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find Assets -type d -depth -empty -exec echo "Removing "{} \; -exec rmdir {} \; -exec rm {}.meta \;
