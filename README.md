@@ -3,6 +3,11 @@ Git won't tracked directory changes so you need remove them yourself after check
 Unity would generate `.meta` file for every file and directory.
 So these hooks use to remove empty directory and its `.meta` file for consistency.
 
+## Environment
+
+- Git for Windows
+- Git on macOS
+
 ## Usage
 Just copy `install-hooks.sh` and `hooks` directory to your git repository, then run `install-hooks.sh`.
 
