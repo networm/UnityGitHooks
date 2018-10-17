@@ -19,6 +19,13 @@ Just copy `install-hooks.sh` and `hooks` directory to your git repository, then 
   And we need delete every empty directory when encountered.
   So that we could remove nested empty directories.
 
+* useless files
+
+  There are too many useless files exist in working dir, include `.DS_Store`, `Thumbs.db`, `Desktop.ini`, `desktop.ini`.
+  They are generated occasionally by Operating System. These files are usually ignored in `.gitignore` file.
+  Then Git treat containing directory didn't exist but Unity don't think so. Unity would generate corresponding `.meta` for directory.
+  We need delete these useless ignored files.
+
 ## Test
 You could run `hooks/testcase.sh` to build test directory structure.
 And then you could run `hooks/post-checkout.sh` or `hooks/post-merge` to remove empty directories.
